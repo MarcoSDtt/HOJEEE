@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Academia Fitness - Sua melhor versão começa aqui!">
+    <title>Academia Fitness</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        .hero-section {
+            background-image: url('IMG/1920x1080.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            font-weight: 600;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-top: 15px;
+        }
+
+        .btn-primary {
+            background-color: #ff5622;
+            padding: 12px 30px;
+            font-size: 1rem;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            margin-top: 20px;
+        }
+
+        .btn-primary:hover {
+            background-color: #e64a19;
+        }
+
+        .section-title {
+            font-weight: 600;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border: none;
+            border-radius: 10px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 15px;
+            width: 100%;
+            border: 1px solid #000000;
+        }
+
+        .contact-form button {
+            background-color: #ff6122;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            color: white;
+        }
+
+        footer {
+            background-color: #202020;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #ff22da;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .plan-card {
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .plan-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .plan-card-highlighted {
+            background-color: #fd491cef;
+            color: white;
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);} 
+              
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">Une Fitness</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#services">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#contact">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Transforme seu Corpo e sua Vida</h1>
+            <p>Com treinos personalizados e estrutura de ponta, nós ajudamos você a alcançar seus objetivos!</p>
+            <a href="#services" class="btn btn-primary">Explore Nossos Serviços</a>
+        </div>
+    </section>
+    <section id="services" class="py-5">
+        <div class="container text-center">
+            <h2 class="section-title">Nossos Serviços</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card shadow-lg">
+                        <img src="img/Treino Personalizado.png" class="card-img-top" alt="Treinamento Personalizado">
+                        <div class="card-body">
+                            <h5 class="card-title">Treinamento Personalizado</h5>
+                            <p class="card-text">Acompanhamento de perto com treinadores especializados para você alcançar os melhores resultados.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-lg">
+                        <img src="img/Equipamentos.png" class="card-img-top" alt="Equipamentos Modernos">
+                        <div class="card-body">
+                            <h5 class="card-title">Equipamentos Modernos</h5>
+                            <p class="card-text">Contamos com equipamentos de última geração para potencializar seu desempenho.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-lg">
+                        <img src="img/Grupo.png" class="card-img-top" alt="Aulas em Grupo">
+                        <div class="card-body">
+                            <h5 class="card-title">Aulas em Grupo</h5>
+                            <p class="card-text">Participe de aulas dinâmicas e motivadoras com colegas, criando uma rede de apoio.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<section id="plans" class="py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="section-title mb-5">Escolha o Seu Plano</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-lg border-0 rounded-lg plan-card">
+                    <div class="card-body p-4">
+                        <h3 class="card-title mb-4">Plano Start</h3>
+                        <div class="price mb-4">
+                            <span class="price-value">R$ 99,90</span>/mês
+                        </div>
+                        <ul class="list-unstyled mb-4">
+                            <li><i class="fas fa-check-circle text-success"></i>Acesso ilimitado à equipamentos </li> 
+                                <li><i class="fas fa-check-circle text-success"></i> Acesso ilimitado às aulas coletivas </li>
+                                <li><i class="fas fa-check-circle text-success"></i> Acompanhamento técnico do professor </li>
+                                <li><i class="fas fa-check-circle text-success"></i> Estacionamento exclusivo </li>
+                                <li><i class="fas fa-check-circle text-success"></i> Fit Home </li>
+                                <li><i class="fas fa-check-circle text-success"></i> APP </li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary plan-btn">Assinar Agora</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-lg border-0 rounded-lg plan-card plan-card-highlighted">
+                    <div class="card-body p-4">
+                        <h3 class="card-title mb-4">Plano Premium</h3>
+                        <div class="price mb-4">
+                            <span class="price-value">R$ 129,90</span>/mês
+                        </div>
+                        <ul class="list-unstyled mb-4">
+                            <li><i class="fas fa-check-circle text-success"></i>Acesso ilimitado às aulas coletiva </li>
+                                <li><i class="fas fa-check-circle text-success"></i> Acompanhamento técnico do professor </li>
+                                <li><i class="fas fa-check-circle text-success"></i> Estacionamento exclusivo </li>
+                                <li><i class="fas fa-check-circle text-success"></i> Allp Fit Home </li>
+                                <li><i class="fas fa-check-circle text-success"></i> APP </li>
+                                <li><i class="fas fa-check-circle text-success"></i> Leve 6 amigos pra treinar </li>
+                                <li><i class="fas fa-check-circle text-success"></i> Treine em todas as unidades da Allp Fit </li>
+                                <li><i class="fas fa-check-circle text-success"></i> Sala VIP </li>
+                                <li><i class="fas fa-check-circle text-success"></i> Allp Zone </li>
+                                <li><i class="fas fa-check-circle text-success"></i> Spinning (3x na semana) </li>
+                                <li><i class="fas fa-check-circle text-success"></i> Allp Drink (1 dose de pré-treino) </li>
+                                
+                        </ul>
+                        <a href="#contact" class="btn btn-primary plan-btn">Assinar Agora</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-lg border-0 rounded-lg plan-card">
+                    <div class="card-body p-4">
+                        <h3 class="card-title mb-4">Plano ALL</h3>
+                        <div class="price mb-4">
+                            <span class="price-value">R$ 189,90</span>/mês
+                        </div>
+                        <ul class="list-unstyled mb-4">
+                           
+                            <li><i class="fas fa-check-circle text-success"></i> Acesso ilimitado à musculação </li>
+                                <li><i class="fas fa-check-circle text-success"></i> Acesso ilimitado às aulas coletivas </li>
+                                <li><i class="fas fa-check-circle text-success"></i> Acompanhamento técnico do professor</li>
+                                <li><i class="fas fa-check-circle text-success"></i> Estacionamento exclusivo </li>
+                                <li><i class="fas fa-check-circle text-success"></i> Allp Fit Home </li>
+                                <li><i class="fas fa-check-circle text-success"></i> APP </li>
+                                <li><i class="fas fa-check-circle text-success"></i> Leve 10 amigos para treinar (sem dia específico) </li>
+                                <li><i class="fas fa-check-circle text-success"></i> Treine em todas as unidades da Allp Fit </li>
+                                <li><i class="fas fa-check-circle text-success"></i> Allp Spa com cadeira de massagem </li>
+                                <li><i class="fas fa-check-circle text-success"></i> Leve 10 amigos para treinar (sem dia específico) </li>
+                                <li><i class="fas fa-check-circle text-success"></i> Treine em todas as unidades da Allp Fit </li>
+                                <li><i class="fas fa-check-circle text-success"></i> Sala VIP </li>
+                                <li><i class="fas fa-check-circle text-success"></i> Allp Zone </li>
+                                <li><i class="fas fa-check-circle text-success"></i> Spinning Ilimitado </li>
+                                <li><i class="fas fa-check-circle text-success"></i> Allp Drink (1 dose de pré-treino) </li>
+                                <li><i class="fas fa-check-circle text-success"></i> Allp Drink (1 dose de whey protein por dia) </li>
+                                <li><i class="fas fa-check-circle text-success"></i> Allp Sauna </li>
+                                <li><i class="fas fa-check-circle text-success"></i> Allp Seguro </li>
+                                <li><i class="fas fa-check-circle text-success"></i> Área Kids </li>
+                                <li><i class="fas fa-check-circle text-success"></i> Scanner corporal (1x a cada 3 meses) </li>
+                                <li><i class="fas fa-check-circle text-success"></i> Coach de Performance (1 sessão a cada 90 dias) </li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary plan-btn">Assinar Agora</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section id="contact" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="section-title">Entre em Contato</h2>
+            <p>Tem alguma dúvida? Preencha o formulário abaixo e entraremos em contato com você!</p>
+            <form class="contact-form">
+                <input type="text" class="form-control mb-3" placeholder="Seu nome" required>
+                <input type="email" class="form-control mb-3" placeholder="Seu e-mail" required>
+                <textarea class="form-control mb-3" rows="5" placeholder="Sua mensagem" required></textarea>
+                <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <p>&copy; 2024 Une Fitness | Todos os
